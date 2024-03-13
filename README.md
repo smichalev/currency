@@ -37,3 +37,22 @@ curl --location 'http://127.0.0.1:3000/currency/by-timestamp?timestamp=2024-03-1
 ```
 
 CORS включен
+
+## DEMO
+
+Так же развернул сервис на своей VDS
+
+http://89.19.214.44:3000
+
+Получение валютной пары по их соотношению друг к другу
+
+```
+curl --location 'http://89.19.214.44:3000/currency?from=RUB&to=JPY'
+```
+
+Получение всех валютных пар за определенный день
+
+```
+curl --location 'http://89.19.214.44:3000/currency/by-timestamp?timestamp=2024-03-13T04%3A05%3A49.912Z'
+```
+
